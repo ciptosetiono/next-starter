@@ -6,6 +6,7 @@ const config: Config = {
     './components/**/*.{js,ts,jsx,tsx,mdx}',
     './app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
+  darkMode: 'class',
   theme: {
     extend: {
       gridTemplateColumns: {
@@ -25,6 +26,11 @@ const config: Config = {
           transform: 'translateX(100%)',
         },
       },
+    },
+  },
+  variants: {
+    extend: {
+      animation: ['group-hover'],
     },
   },
   plugins: [require('@tailwindcss/forms')],
